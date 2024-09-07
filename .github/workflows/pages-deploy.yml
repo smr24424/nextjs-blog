@@ -32,7 +32,7 @@ jobs:
 
       - name: Run Docker container with local directory
         run: |
-          docker run -d -p 4000:4000 -v ${{ github.workspace }}/next.config.mjs:/app/mr24427/nextjs-blog:latest
+          docker run -d -p 4000:4000 -v ${{ github.workspace }}/next.config.mjs:/app/ smr24427/nextjs-blog:latest
 
       - name: show Next.js app
         run: docker exec $(docker ps -q -f ancestor=smr24427/nextjs-blog:latest) ls -al
