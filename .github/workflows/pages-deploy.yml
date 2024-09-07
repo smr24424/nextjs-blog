@@ -3,7 +3,7 @@ name: Deploy Next.js with Docker
 on:
   push:
     branches:
-      - main
+      - master
 
 permissions:
   contents: read
